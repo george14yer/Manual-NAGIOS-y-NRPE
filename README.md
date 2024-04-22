@@ -58,10 +58,12 @@ La arquitectura de Nagios se basa en un servidor principal que alberga el núcle
 ### Requirements (Requisitos)
 ## Pasos
 
-### paso 1:Actualizar el sistema
+### paso 1: Actualizar el sistema
 
 Asegúrese de que todas las listas de paquetes están actualizadas como se indica a continuación:
-```sudo apt update```
+```
+sudo apt update
+```
 
 
 
