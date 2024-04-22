@@ -1,4 +1,4 @@
- Manual-NAGIOS-y-NRPE 
+ Manual NAGIOS y NRPE 
 =================
 
 ### Authors (Autores)
