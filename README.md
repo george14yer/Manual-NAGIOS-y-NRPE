@@ -63,11 +63,21 @@ La arquitectura de Nagios se basa en un servidor principal que alberga el núcle
 
 ### FAQ (Preguntas y respuestas)
 
-1. ¿Qué es Nagios y para qué se utiliza?
-Nagios es una herramienta de monitorización de red de código abierto utilizada para supervisar routers, servidores, aplicaciones y servicios. Se utiliza para garantizar que estos sistemas estén en funcionamiento óptimo y para detectar cualquier fallo o anomalía en ellos.
 
-2. ¿Cuál es la arquitectura básica de Nagios?
-La arquitectura de Nagios se basa en un servidor principal que aloja el núcleo de Nagios.
+1. **¿Qué es Nagios y para qué se utiliza?**
+   Nagios es una herramienta de monitorización de red de código abierto utilizada para supervisar routers, servidores, aplicaciones y servicios. Se utiliza para garantizar que estos sistemas estén en funcionamiento óptimo y para detectar cualquier fallo o anomalía en ellos.
+
+2. **¿Cuál es la arquitectura básica de Nagios?**
+   La arquitectura de Nagios se basa en un servidor principal que aloja el núcleo de Nagios. Este núcleo utiliza plugins para interactuar con los hosts remotos, los cuales tienen instalado un agente como NRPE para permitir la comunicación con el servidor principal.
+
+3. **¿Qué tipo de alertas puede enviar Nagios en caso de fallos?**
+   Nagios puede enviar alertas de notificación a través de diversos métodos, como correo electrónico, SMS o integración con sistemas de ticketing. Esto permite a los equipos de operaciones de TI responder rápidamente y minimizar el impacto en el negocio.
+
+4. **¿Cuáles son algunas de las características clave de Nagios?**
+   Algunas características clave de Nagios incluyen la capacidad de monitorear diversos tipos de dispositivos y servicios, la generación de informes y representaciones visuales, la escalabilidad y la capacidad de extensión a través de plugins.
+
+5. **¿Cómo puedo instalar Nagios en Ubuntu 20.04?**
+   Puedes instalar Nagios en Ubuntu 20.04 siguiendo los pasos detallados en la documentación oficial de Nagios o en tutoriales disponibles en línea. Esto implica instalar el servidor principal de Nagios, configurar los plugins y agentes necesarios, y realizar la configuración adecuada para monitorear tus sistemas.
    
 ### Contacts (Contactos)
 
