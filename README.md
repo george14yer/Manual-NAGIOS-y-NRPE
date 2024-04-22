@@ -2,7 +2,6 @@
 
 [Authors (Autores)](#tabla-de-autores)
 
-## tabla-de-autores
 | Author       |    Origin   | 
 |--------------|--------------|
 | Jorge Cerra  | UniBarranquilla - IUB    | 
