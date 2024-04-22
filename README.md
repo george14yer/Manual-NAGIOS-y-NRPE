@@ -1,5 +1,4 @@
 # Manual-NAGIOS-y-NRPE
-
 # <h3>Authors (Autores)</h3>
 | Author       |    Origin   | 
 |--------------|--------------|
