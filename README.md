@@ -36,7 +36,7 @@ La arquitectura de Nagios se basa en un servidor principal que alberga el núcle
 
 ### Keyworks (Palabras claves)
 
-- `Server`
+- Server
 - `Nagios`
 - `Ubuntu`
 - `Monitoring`
