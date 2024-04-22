@@ -5,8 +5,8 @@
 
 | Author                | Origin                               |
 | --------------------- | ------------------------------------ |
-| Emmanuel Gutiérrez    | UniBarranquilla - IUB                |
-| Alvin Henao           | UniBarranquilla - IUB                |
+| Brandon Arias    | UniBarranquilla - IUB                |
+| Jorge Cerra           | UniBarranquilla - IUB                |
 
 ### Abstract (Resumen)
 
