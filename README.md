@@ -64,10 +64,10 @@ La arquitectura de Nagios se basa en un servidor principal que alberga el núcle
 ### FAQ (Preguntas y respuestas)
 
 1. ¿Qué es Nagios y para qué se utiliza?
-    Nagios es una herramienta de monitorización de red de código abierto utilizada para supervisar routers, servidores, aplicaciones y servicios. Se utiliza para garantizar que estos sistemas estén en funcionamiento óptimo y para detectar cualquier fallo o anomalía en ellos.
+Nagios es una herramienta de monitorización de red de código abierto utilizada para supervisar routers, servidores, aplicaciones y servicios. Se utiliza para garantizar que estos sistemas estén en funcionamiento óptimo y para detectar cualquier fallo o anomalía en ellos.
 
 2. ¿Cuál es la arquitectura básica de Nagios?
-   La arquitectura de Nagios se basa en un servidor principal que aloja el núcleo de Nagios.
+La arquitectura de Nagios se basa en un servidor principal que aloja el núcleo de Nagios.
    
 ### Contacts (Contactos)
 
