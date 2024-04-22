@@ -1,6 +1,6 @@
 # Manual-NAGIOS-y-NRPE
 
-[<h3>Authors (Autores)</>](#tabla-de-autores)
+[<h3>Authors (Autores)</h3>](#tabla-de-autores)
 
 
 | Author       |    Origin   | 
