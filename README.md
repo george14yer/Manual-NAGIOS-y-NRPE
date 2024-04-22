@@ -1,6 +1,6 @@
 # Manual-NAGIOS-y-NRPE
 
-## <h3>Authors (Autores)</h3>
+# <h3>Authors (Autores)</h3>
 | Author       |    Origin   | 
 |--------------|--------------|
 | Jorge Cerra  | UniBarranquilla - IUB    | 
