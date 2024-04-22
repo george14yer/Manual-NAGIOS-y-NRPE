@@ -20,7 +20,8 @@ La arquitectura de Nagios se basa en un servidor principal que alberga el núcle
 
 ### Screenshots (Pantallazos)
 
-Place text here
+![image](https://github.com/george14yer/Manual-NAGIOS-y-NRPE/assets/80540365/be3f6481-ebfa-488c-84ce-6f3252825a71)
+
 
 ### TOOLS TIC'S (Herramientas TIC'S)
 
