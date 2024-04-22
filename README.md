@@ -10,7 +10,7 @@
 
 
 
-Cómo instalar Nagios en Ubuntu 20.04
+<h3>Cómo instalar Nagios en Ubuntu 20.04</h3>
 
 ### Abstract (Resumen)
 
