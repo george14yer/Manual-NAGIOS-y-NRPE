@@ -74,7 +74,20 @@ Los siguientes paquetes de prerrequisitos son necesarios en la instalación de N
 ```
 sudo apt install wget unzip vim curl gcc openssl build-essential libgd-dev libssl-dev libapache2-mod-php php-gd php apache2
 ```
+### Paso 3: Descargar Nagios Core en Ubuntu 20.04
+Descargar el núcleo de Nagios. Para descargar y extraer Nagios Core ejecuta el comando:
+```
+export VER="4.4.6"
+```
+A continuación, utilice el comando curl de la siguiente manera.
+```
+curl -SL https://github.com/NagiosEnterprises/nagioscore/releases/download/nagios-$VER/nagios-$VER.tar.gz | tar -xzf -
+```
+Esto descarga un directorio llamado nagios-4.4.6 en tu directorio de trabajo actual.
+![image-2-1024x110](https://github.com/george14yer/Manual-NAGIOS-y-NRPE/assets/80540365/3ff1690b-b6b7-4748-97e9-348ec7489281)
 
+### Paso 4: cómo instalar Nagios en Ubuntu
+Instalar Ubuntu compilando desde el código fuente.
 
 ### Usage (Por qué es importante usarlo)
 
