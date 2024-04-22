@@ -54,6 +54,11 @@ La arquitectura de Nagios se basa en un servidor principal que alberga el núcle
 - Un servidor Ubuntu 20.04. (usar Oracle VirtualBox para hacer una maquina virtual en tu PC)
 - Acceso root en tu servidor para instalar y desplegar los servicios. O un usuario con privilegios sudo
 
+### Requirements (Requisitos)
+## Pasos
+
+
+
 ### Usage (Por qué es importante usarlo)
 
 - Mantenimiento de la disponibilidad del sistema: Nagios monitorea constantemente los routers, servidores, aplicaciones y servicios, garantizando que estén en funcionamiento óptimo. Esto ayuda a prevenir interrupciones no planificadas en los sistemas y servicios críticos.
