@@ -65,6 +65,16 @@ Asegúrese de que todas las listas de paquetes están actualizadas como se indic
 sudo apt update
 ```
 
+Actualiza los paquetes del sistema a sus últimas versiones:
+```
+sudo apt upgrade
+```
+### Paso 2: Instalar los paquetes de requisitos previos
+
+Los siguientes paquetes de prerrequisitos son necesarios en la instalación de Nagios Core.
+```
+sudo apt install wget unzip vim curl gcc openssl build-essential libgd-dev libssl-dev libapache2-mod-php php-gd php apache2
+```
 
 
 ### Usage (Por qué es importante usarlo)
