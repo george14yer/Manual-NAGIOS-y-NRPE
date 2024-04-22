@@ -14,6 +14,7 @@
 
 ### Abstract (Resumen)
 
+
 Nagios es una destacada herramienta de código abierto que proporciona capacidades de monitorización de red. Este sistema es fundamental para supervisar routers, servidores, aplicaciones y servicios, garantizando que estén en funcionamiento óptimo. En caso de fallos, Nagios envía alertas de notificación a través de diversos métodos para evitar daños mayores. Además, ofrece representaciones visuales e informes que facilitan la comprensión de los resultados de la monitorización.
 
 La arquitectura de Nagios se basa en un servidor principal que alberga el núcleo de Nagios, el cual utiliza plugins para interactuar con los hosts remotos. Estos hosts, a su vez, tienen instalado un agente como NRPE para permitir la comunicación con el servidor principal.
@@ -56,6 +57,11 @@ La arquitectura de Nagios se basa en un servidor principal que alberga el núcle
 
 ### Requirements (Requisitos)
 ## Pasos
+
+### paso 1:Actualizar el sistema
+
+Asegúrese de que todas las listas de paquetes están actualizadas como se indica a continuación:
+```sudo apt update```
 
 
 
