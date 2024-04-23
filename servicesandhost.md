@@ -52,3 +52,14 @@ define service {
     notifications_enabled   1
 }
 ```
+
+##
+### Uncomment the line 
+```
+cfg_dir=/usr/local/nagios/etc/servers of the /usr/local/nagios/etc/nagios.cfg file
+```
+##
+### We've restarted Nagios
+```
+sudo service nagios restart
+```
