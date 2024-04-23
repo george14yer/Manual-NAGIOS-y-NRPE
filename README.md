@@ -243,11 +243,12 @@ Once authenticated, you will be taken to the control panel shown below.
 ```
 ufw allow 80
 ```
-
-| --------------------- | 
-|  [Install NRPE Agent Service on Nagios Server](https://github.com/george14yer/Manual-NAGIOS-y-NRPE/blob/main/nrpe_service_nagios.md)|
-| [Install NRPE on the Linux client](https://github.com/george14yer/Manual-NAGIOS-y-NRPE/blob/main/nrpelinuxclient.md)  | 
-| [Register the Hosts and services that we want to monitor](https://github.com/george14yer/Manual-NAGIOS-y-NRPE/blob/main/servicesandhost.md) |
+##
+### [<h3>Install NRPE Agent Service on Nagios Server</h3>](https://github.com/george14yer/Manual-NAGIOS-y-NRPE/blob/main/nrpe_service_nagios.md) 
+##
+### [<h3>Install NRPE on the Linux client</h3>](https://github.com/george14yer/Manual-NAGIOS-y-NRPE/blob/main/nrpelinuxclient.md)  
+##
+### [<h3>Register the Hosts and services that we want to monitor</h3>](https://github.com/george14yer/Manual-NAGIOS-y-NRPE/blob/main/servicesandhost.md) 
 
 
 ### Usage (Por qué es importante usarlo)
