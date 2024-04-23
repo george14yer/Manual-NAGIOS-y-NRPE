@@ -1,4 +1,4 @@
- Manual NAGIOS y NRPE 
+ Manual NAGIOS y NRPE Manual
 =================
 
 ### Authors (Autores)
@@ -83,12 +83,107 @@ Then use the curl command as follows.
 ```
 curl -SL https://github.com/NagiosEnterprises/nagioscore/releases/download/nagios-$VER/nagios-$VER.tar.gz | tar -xzf -
 ```
+
 This downloads a directory called nagios-4.4.6 to your current working directory.
 
-![image-2-1024x110](https://github.com/george14yer/Manual-NAGIOS-y-NRPE/assets/80540365/3ff1690b-b6b7-4748-97e9-348ec7489281)
+![image](https://github.com/george14yer/Manual-NAGIOS-y-NRPE/assets/80540365/5b213db3-5a81-48f4-b5d7-66b356d36691)
 ##
 ### Step 4: How to install Nagios on Ubuntu
-Install Ubuntu by compiling from source code.
+We are going to install Ubuntu by compiling from source code. So, first of all, go to the Nagios directory:
+```
+cd nagios-4.4.6
+```
+Next, run the configuration script:
+```
+./configure
+```
+This will take a few seconds and make sure you get an example output shown below towards the end.
+
+![image](https://github.com/george14yer/Manual-NAGIOS-y-NRPE/assets/80540365/30e38771-c613-4c32-b93e-0fa3ebf3d521)
+
+To compile the main program along with the CGIs, run the make all command as follows.
+```
+sudo make all
+```
+Next, create the group users as follows.
+```
+sudo make install-groups-users
+```
+```
+sudo usermod -a -G nagios www-data
+```
+
+![image](https://github.com/george14yer/Manual-NAGIOS-y-NRPE/assets/80540365/2d653ba7-1a46-4189-b198-7d6e6bcf207c)
+
+Next, install Nagios Core 4.x on your Ubuntu 20.04 system
+```
+sudo make install
+```
+
+![image](https://github.com/george14yer/Manual-NAGIOS-y-NRPE/assets/80540365/bb268ec4-0fbc-4497-916e-451178609834)
+
+Towards the end, some additional instructions will print as shown above.
+
+Therefore, run the following command to install the init script to the /lib/systemd/system 
+```
+sudo make install-init
+```
+Next, install and configure permissions on the directory that contains the external command file.
+```
+sudo make install-commandmode
+```
+Next, install the example configuration files in /usr/local/nagios/etc/
+```
+sudo make install-config
+```
+At this point, activate the Apache module necessary for the Nagios web interface
+```
+sudo make install-webconf
+```
+```
+sudo a2enmod rewrite cgi
+```
+```
+sudo systemctl restart apache2
+```
+Also, feel free to install the Nagios exfoliation theme as follows:
+```
+sudo make install-exfoliation
+```
+For the classic Nagios theme, run the following command.
+```
+sudo make install-classicui
+```
+##
+### Step 5: Create a Nagios access web user
+You need to create a login user that will be used to log in to the Nagios interface. We will create a user named nagiosadmin using the command.
+```
+sudo htpasswd -c /usr/local/nagios/etc/htpasswd.users nagiosadmin
+```
+You will be asked to provide a password for the user and confirm it.
+
+![image](https://github.com/george14yer/Manual-NAGIOS-y-NRPE/assets/80540365/2682c07b-226b-49e8-bbcf-a106a9eee500)
+
+The password is written to the file
+```
+/usr/local/nagios/etc/htpasswd.users.
+```
+##
+### Step 6: Install the Nagios plugins
+Plugins are used to extend the functionality of Nagios. You can check out the latest plugins from GitHub.
+
+To download the plugins, run the command
+```
+VER="2.3.3"
+```
+```
+curl -SL https://github.com/nagios-plugins/nagios-plugins/releases/download/release-$VER/nagios-plugins-$VER.tar.gz | tar -xzf -
+```
+
+![image](https://github.com/george14yer/Manual-NAGIOS-y-NRPE/assets/80540365/f23108c8-d5b1-4988-9ad4-359da0bb5b45)
+
+
+
 
 ### Usage (Por qué es importante usarlo)
 
