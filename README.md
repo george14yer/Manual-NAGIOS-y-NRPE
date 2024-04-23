@@ -244,6 +244,12 @@ Once authenticated, you will be taken to the control panel shown below.
 ufw allow 80
 ```
 
+| --------------------- | 
+|  [Install NRPE Agent Service on Nagios Server](https://github.com/george14yer/Manual-NAGIOS-y-NRPE/blob/main/nrpe_service_nagios.md)|
+| [Install NRPE on the Linux client](https://github.com/george14yer/Manual-NAGIOS-y-NRPE/blob/main/nrpelinuxclient.md)  | 
+| [Register the Hosts and services that we want to monitor](https://github.com/george14yer/Manual-NAGIOS-y-NRPE/blob/main/servicesandhost.md) |
+
+
 ### Usage (Por qué es importante usarlo)
 
 - Maintaining system availability: Nagios constantly monitors routers, servers, applications and services, ensuring they are operating optimally. This helps prevent unplanned disruptions to critical systems and services.
