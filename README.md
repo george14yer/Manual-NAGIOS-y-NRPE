@@ -10,22 +10,21 @@
 
 
 
-<h3>Cómo instalar Nagios en Ubuntu 20.04</h3>
+<h3>How to install Nagios on Ubuntu 20.04</h3>
 
 ### Abstract (Resumen)
 
 
-Nagios es una destacada herramienta de código abierto que proporciona capacidades de monitorización de red. Este sistema es fundamental para supervisar routers, servidores, aplicaciones y servicios, garantizando que estén en funcionamiento óptimo. En caso de fallos, Nagios envía alertas de notificación a través de diversos métodos para evitar daños mayores. Además, ofrece representaciones visuales e informes que facilitan la comprensión de los resultados de la monitorización.
+Nagios is a prominent open source tool that provides network monitoring capabilities. This system is essential for monitoring routers, servers, applications and services, ensuring that they are operating optimally. In case of failures, Nagios sends notification alerts through various methods to prevent further damage. In addition, it offers visual representations and reports that make it easy to understand monitoring results.
 
-La arquitectura de Nagios se basa en un servidor principal que alberga el núcleo de Nagios, el cual utiliza plugins para interactuar con los hosts remotos. Estos hosts, a su vez, tienen instalado un agente como NRPE para permitir la comunicación con el servidor principal.
-
+The Nagios architecture is based on a main server that hosts the Nagios core, which uses plugins to interact with remote hosts. These hosts, in turn, have an agent such as NRPE installed to allow communication with the main server.
 ### Screenshots (Pantallazos)
 
 ![image](https://github.com/george14yer/Manual-NAGIOS-y-NRPE/assets/80540365/be3f6481-ebfa-488c-84ce-6f3252825a71)
 
 
 ### TOOLS TIC'S (Herramientas TIC'S)
-- servidor Ubuntu 20.04
+- Ubuntu server 20.04
 - VirtualBox
 - Putty
 
@@ -41,56 +40,55 @@ La arquitectura de Nagios se basa en un servidor principal que alberga el núcle
 - Nagios
 - Ubuntu
 - Monitoring
-- Monitoreo de red
-- Alertas de sistema
-- Gestión de infraestructura
-- Supervisión remota
-- Automatización de tareas
-- Diagnóstico de problemas
-- Seguridad de red
-- Informes de rendimiento
-
+- Network monitoring
+- System alerts
+- Infrastructure management
+- Remote monitoring
+- Task automation
+- Problem diagnosis
+- Network security
+- Performance reports
 ### Requirements (Requisitos)
 
-- Un servidor Ubuntu 20.04. (usar Oracle VirtualBox para hacer una maquina virtual en tu PC)
-- Acceso root en tu servidor para instalar y desplegar los servicios. O un usuario con privilegios sudo
+- An Ubuntu 20.04 server. (use Oracle VirtualBox to make a virtual machine on your PC)
+- Root access on your server to install and deploy services. Or a user with sudo privileges
 
-## Pasos
+## Steps
 
-### paso 1: Actualizar el sistema
+### Step 1: Update the system
 
-Asegúrese de que todas las listas de paquetes están actualizadas como se indica a continuación:
+Make sure all package lists are up to date as follows:
 ```
 sudo apt update
 ```
 
-Actualiza los paquetes del sistema a sus últimas versiones:
+Update system packages to their latest versions:
 ```
 sudo apt upgrade
 ```
 ##
-### Paso 2: Instalar los paquetes de requisitos previos
+### Step 2: Install the prerequisite packages
 
-Los siguientes paquetes de prerrequisitos son necesarios en la instalación de Nagios Core.
+The following prerequisite packages are required when installing Nagios Core.
 ```
 sudo apt install wget unzip vim curl gcc openssl build-essential libgd-dev libssl-dev libapache2-mod-php php-gd php apache2
 ```
 ##
-### Paso 3: Descargar Nagios Core en Ubuntu 20.04
-Descargar el núcleo de Nagios. Para descargar y extraer Nagios Core ejecuta el comando:
+### Step 3: Download Nagios Core on Ubuntu 20.04
+Download the Nagios core. To download and extract Nagios Core run the command:
 ```
 export VER="4.4.6"
 ```
-A continuación, utilice el comando curl de la siguiente manera.
+Then use the curl command as follows.
 ```
 curl -SL https://github.com/NagiosEnterprises/nagioscore/releases/download/nagios-$VER/nagios-$VER.tar.gz | tar -xzf -
 ```
-Esto descarga un directorio llamado nagios-4.4.6 en tu directorio de trabajo actual.
+This downloads a directory called nagios-4.4.6 to your current working directory.
 
 ![image-2-1024x110](https://github.com/george14yer/Manual-NAGIOS-y-NRPE/assets/80540365/3ff1690b-b6b7-4748-97e9-348ec7489281)
 ##
-### Paso 4: cómo instalar Nagios en Ubuntu
-Instalar Ubuntu compilando desde el código fuente.
+### Step 4: How to install Nagios on Ubuntu
+Install Ubuntu by compiling from source code.
 
 ### Usage (Por qué es importante usarlo)
 
@@ -98,29 +96,29 @@ Instalar Ubuntu compilando desde el código fuente.
 - Detección temprana de problemas: Nagios detecta rápidamente cualquier fallo o anomalía en los sistemas supervisados. Esto permite a los administradores de sistemas tomar medidas correctivas antes de que los problemas se vuelvan críticos o afecten a los usuarios finales.
 - Prevención de daños mayores: En caso de fallos, Nagios envía alertas de notificación a través de diversos métodos, como correo electrónico, SMS o integración con sistemas de ticketing. Esto permite a los equipos de operaciones de TI responder rápidamente y minimizar el impacto en el negocio.
 - Facilita la toma de decisiones: Nagios ofrece representaciones visuales e informes que facilitan la comprensión de los resultados de la monitorización. Esto ayuda a los administradores de sistemas a identificar tendencias, analizar el rendimiento y tomar decisiones informadas sobre la infraestructura de TI.
-
+  
 ### FAQ (Preguntas y respuestas)
 
 
-**1. ¿Qué es Nagios y para qué se utiliza?**
+**1. What is Nagios and what is it used for?**
 
-   Nagios es una herramienta de monitorización de red de código abierto utilizada para supervisar routers, servidores, aplicaciones y servicios. Se utiliza para garantizar que estos sistemas estén en funcionamiento óptimo y para detectar cualquier fallo o anomalía en ellos.
+   Nagios is an open source network monitoring tool used to monitor routers, servers, applications and services. It is used to ensure that these systems are in optimal operation and to detect any failures or anomalies in them.
 
-**2. ¿Cuál es la arquitectura básica de Nagios?**
+**2. What is the basic architecture of Nagios?**
    
-   La arquitectura de Nagios se basa en un servidor principal que aloja el núcleo de Nagios. Este núcleo utiliza plugins para interactuar con los hosts remotos, los cuales tienen instalado un agente como NRPE para permitir la comunicación con el servidor principal.
+   The Nagios architecture is based on a main server that hosts the Nagios core. This kernel uses plugins to interact with remote hosts, which have an agent such as NRPE installed to allow communication with the main server.
    
-**3. ¿Qué tipo de alertas puede enviar Nagios en caso de fallos?**
+**3. What type of alerts can Nagios send in case of failures?**
    
-   Nagios puede enviar alertas de notificación a través de diversos métodos, como correo electrónico, SMS o integración con sistemas de ticketing. Esto permite a los equipos de operaciones de TI responder rápidamente y minimizar el impacto en el negocio.
+   Nagios can send notification alerts through various methods, such as email, SMS, or integration with ticketing systems. This allows IT operations teams to respond quickly and minimize business impact.
    
-**4. ¿Cuáles son algunas de las características clave de Nagios?**
+**4. What are some of the key features of Nagios?**
    
-   Algunas características clave de Nagios incluyen la capacidad de monitorear diversos tipos de dispositivos y servicios, la generación de informes y representaciones visuales, la escalabilidad y la capacidad de extensión a través de plugins.
+   Some key features of Nagios include the ability to monitor various types of devices and services, reporting and visual representations, scalability, and extensibility through plugins.
    
-**5. ¿Cómo puedo instalar Nagios en Ubuntu 20.04?**
+**5. How can I install Nagios on Ubuntu 20.04?**
    
-   Puedes instalar Nagios en Ubuntu 20.04 siguiendo los pasos detallados en la documentación oficial de Nagios o en tutoriales disponibles en línea. Esto implica instalar el servidor principal de Nagios, configurar los plugins y agentes necesarios, y realizar la configuración adecuada para monitorear tus sistemas.
+   You can install Nagios on Ubuntu 20.04 by following the steps detailed in the official Nagios documentation or in tutorials available online. This involves installing the main Nagios server, configuring the necessary plugins and agents, and making the appropriate configuration to monitor your systems.
    
 ### Contacts (Contactos)
 
