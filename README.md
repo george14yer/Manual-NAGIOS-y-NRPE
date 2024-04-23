@@ -234,6 +234,12 @@ Once authenticated, you will be taken to the control panel shown below.
 
 ![image](https://github.com/george14yer/Manual-NAGIOS-y-NRPE/assets/80540365/be3f6481-ebfa-488c-84ce-6f3252825a71)
 
+##
+### Step 9:Enable port 80 in Nagios Server Firewall
+```
+ufw allow 80
+```
+
 ### Usage (Por qué es importante usarlo)
 
 - Maintaining system availability: Nagios constantly monitors routers, servers, applications and services, ensuring they are operating optimally. This helps prevent unplanned disruptions to critical systems and services.
