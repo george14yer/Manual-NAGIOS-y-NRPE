@@ -249,8 +249,7 @@ ufw allow 80
 ### [<h3>Install NRPE on the Linux client</h3>](https://github.com/george14yer/Manual-NAGIOS-y-NRPE/blob/main/nrpelinuxclient.md)  
 ##
 ### [<h3>Register the Hosts and services that we want to monitor</h3>](https://github.com/george14yer/Manual-NAGIOS-y-NRPE/blob/main/servicesandhost.md) 
-
-
+##
 ### Usage (Por qué es importante usarlo)
 
 - Maintaining system availability: Nagios constantly monitors routers, servers, applications and services, ensuring they are operating optimally. This helps prevent unplanned disruptions to critical systems and services.
