@@ -182,8 +182,57 @@ curl -SL https://github.com/nagios-plugins/nagios-plugins/releases/download/rele
 
 ![image](https://github.com/george14yer/Manual-NAGIOS-y-NRPE/assets/80540365/f23108c8-d5b1-4988-9ad4-359da0bb5b45)
 
+In your current working directory, you will have another directory – nagios-plugins-2.3.3
 
+![image](https://github.com/george14yer/Manual-NAGIOS-y-NRPE/assets/80540365/3d4bc64f-69e6-4bd5-bb48-4ded5e0e7a4b)
 
+To install the plugins, navigate to the plugins source directory:
+```
+cd nagios-plugins-2.3.3
+```
+Next, compile the Nagios plugins from source as follows:
+```
+./configure --with-nagios-user=nagios --with-nagios-group=nagios
+```
+```
+sudo make install
+```
+Una vez terminada la instalación verifica que todas las configuraciones estén en orden como se muestra.
+```
+sudo /usr/local/nagios/bin/nagios -v /usr/local/nagios/etc/nagios.cfg
+```
+
+![image](https://github.com/george14yer/Manual-NAGIOS-y-NRPE/assets/80540365/425b2774-26a4-43f9-aea7-3801da282dfe)
+
+##
+### Step 7: Start and enable the Nagios daemon
+With all the configurations established and ready, proceed to start the nagios service as follows:
+
+To start the Nagios service run:
+```
+sudo systemctl enable --now nagios
+```
+Confirm that the Nagios service is running.
+```
+sudo systemctl status nagios
+```
+
+![image](https://github.com/george14yer/Manual-NAGIOS-y-NRPE/assets/80540365/41077cf1-e058-427f-997b-bc4a9d72c765)
+
+The output confirms that Nagios is working.
+##
+### Step 8: Access Nagios
+Finally, we reach the last step where we will access Nagios. To do this, simply open your web browser and go to the displayed URL.
+```
+http://ip_servidor/nagios
+```
+You will be asked to authenticate in the pop-up window that appears. Use the credentials you provided in step 5 and click the “Sign In” button.
+
+![image](https://github.com/george14yer/Manual-NAGIOS-y-NRPE/assets/80540365/b970af8d-50d5-4ead-9bae-a6839a39163f)
+
+Once authenticated, you will be taken to the control panel shown below.
+
+![image](https://github.com/george14yer/Manual-NAGIOS-y-NRPE/assets/80540365/be3f6481-ebfa-488c-84ce-6f3252825a71)
 
 ### Usage (Por qué es importante usarlo)
 
@@ -217,6 +266,7 @@ curl -SL https://github.com/nagios-plugins/nagios-plugins/releases/download/rele
    
 ### Contacts (Contactos)
 
-Place text here
+bmarias@unibarranquilla.edu.co
 
-### Acknowledgements (Agradecimientos)
+jacerra@unibarranquilla.edu.co
+
