@@ -1,9 +1,9 @@
 CONFIGURATION ON THE NAGIOS SERVER.
 =================
 
-Create the servers directory in /usr/local/nagios/etc/
-
-Create the clients.cfg file in /usr/local/nagios/etc/servers and add the following:
+### Create the servers directory in /usr/local/nagios/etc/
+##
+### Create the clients.cfg file in /usr/local/nagios/etc/servers and add the following:
 ```
 define host {
     use                     linux-server
