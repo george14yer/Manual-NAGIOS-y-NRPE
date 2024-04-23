@@ -22,6 +22,10 @@ The Nagios architecture is based on a main server that hosts the Nagios core, wh
 
 ![image](https://github.com/george14yer/Manual-NAGIOS-y-NRPE/assets/80540365/be3f6481-ebfa-488c-84ce-6f3252825a71)
 
+![image](https://github.com/george14yer/Manual-NAGIOS-y-NRPE/assets/80540365/4aec38fb-2d07-4669-a22e-d6d126871dd1)
+
+![image](https://github.com/george14yer/Manual-NAGIOS-y-NRPE/assets/80540365/2907de0b-fae0-45b2-9a69-c9ae1c9609cb)
+
 
 ### TOOLS TIC'S (Herramientas TIC'S)
 - Ubuntu server 20.04
