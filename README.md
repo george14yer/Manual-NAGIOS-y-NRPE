@@ -92,10 +92,10 @@ Install Ubuntu by compiling from source code.
 
 ### Usage (Por qué es importante usarlo)
 
-- Mantenimiento de la disponibilidad del sistema: Nagios monitorea constantemente los routers, servidores, aplicaciones y servicios, garantizando que estén en funcionamiento óptimo. Esto ayuda a prevenir interrupciones no planificadas en los sistemas y servicios críticos.
-- Detección temprana de problemas: Nagios detecta rápidamente cualquier fallo o anomalía en los sistemas supervisados. Esto permite a los administradores de sistemas tomar medidas correctivas antes de que los problemas se vuelvan críticos o afecten a los usuarios finales.
-- Prevención de daños mayores: En caso de fallos, Nagios envía alertas de notificación a través de diversos métodos, como correo electrónico, SMS o integración con sistemas de ticketing. Esto permite a los equipos de operaciones de TI responder rápidamente y minimizar el impacto en el negocio.
-- Facilita la toma de decisiones: Nagios ofrece representaciones visuales e informes que facilitan la comprensión de los resultados de la monitorización. Esto ayuda a los administradores de sistemas a identificar tendencias, analizar el rendimiento y tomar decisiones informadas sobre la infraestructura de TI.
+- Maintaining system availability: Nagios constantly monitors routers, servers, applications and services, ensuring they are operating optimally. This helps prevent unplanned disruptions to critical systems and services.
+- Early problem detection: Nagios quickly detects any failure or anomaly in the monitored systems. This allows system administrators to take corrective action before problems become critical or impact end users.
+- Prevention of further damage: In case of failures, Nagios sends notification alerts through various methods, such as email, SMS or integration with ticketing systems. This allows IT operations teams to respond quickly and minimize business impact.
+- Facilitates decision making: Nagios offers visual representations and reports that make it easier to understand monitoring results. This helps system administrators identify trends, analyze performance, and make informed decisions about IT infrastructure.
   
 ### FAQ (Preguntas y respuestas)
 
