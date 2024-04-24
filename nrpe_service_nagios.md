@@ -57,3 +57,8 @@ From your Nagios server, test the connection to NRPE using the check_nrpe comman
 /usr/local/nagios/libexec/check_nrpe -H <IP_del_servidor_NRPE> -c <nombre_del_comando>
 ```
 Replace <NRPE_server_IP> with the IP address of your NRPE server and <command_name> with the name of the check command you want to execute.
+
+## Annexes
+````
+[Video Tutoriasl](https://www.youtube.com/watch?v=7qZv50kweys)
+````
