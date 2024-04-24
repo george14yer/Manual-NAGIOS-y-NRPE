@@ -1,59 +1,59 @@
-## Paso 1: Descarga del código fuente de NRPE
+## Step 1: Downloading NRPE Source Code
 
-1. Dirígete al [sitio web oficial de Nagios](https://github.com/NagiosEnterprises/nrpe) y descarga el paquete NRPE.
-2. En tu servidor Nagios, abre una terminal y navega hasta el directorio donde deseas descargar NRPE.
-3. Usa el comando `git clone` para clonar el repositorio NRPE desde GitHub:
+1. Go to the [official Nagios website](https://github.com/NagiosEnterprises/nrpe) and download the NRPE package.
+2. On your Nagios server, open a terminal and navigate to the directory where you want to download NRPE.
+3. Use the `git clone`  command to clone the NRPE repository from GitHub:
 
    ```
    git clone https://github.com/NagiosEnterprises/nrpe.git
    ```
-## Paso 2: Instalación de dependencias
-Instala las herramientas y las bibliotecas necesarias para compilar NRPE. En sistemas basados en Debian/Ubuntu, puedes usar el siguiente comando:
+## Step 2: Installing Dependencies
+Install the necessary tools and libraries to compile NRPE. On Debian/Ubuntu-based systems, you can use the following command:
 
 ```
 sudo apt-get update
 sudo apt-get install -y autoconf automake gcc libc6 libmcrypt-dev make libssl-dev wget dc build-essential
 
 ```
-## Paso 3: Compilación e instalación de NRPE
-Navega al directorio nrpe que se ha creado después de la clonación:
+## Step 3: Compiling and Installing NRPE
+Navigate to the nrpe directory created after cloning:
 ```
 cd nrpe
 
 ```
-Ejecuta el script de configuración:
+Run the configuration script:
 ```
 ./configure --enable-command-args
 
 ```
-Compila NRPE:
+Compile NRPE:
 ````
 make all
 ````
 
-Instala NRPE y sus plugins:
+Install NRPE and its plugins:
 ```
 sudo make install
 ````
-## Paso 4: Configuración de NRPE
-Edita el archivo de configuración nrpe.cfg ubicado en /usr/local/nagios/etc/:
+## Step 4: NRPE Configuration
+Edit the nrpe.cfg configuration file located in /usr/local/nagios/etc/:
 
 ````
 sudo nano /usr/local/nagios/etc/nrpe.cfg
 ````
-Ajusta las configuraciones según las necesidades de tu entorno, asegurándote de configurar adecuadamente los comandos y la seguridad.
+Adjust the configurations according to your environment's needs, ensuring proper configuration of commands and security.
 
 
 
-## Paso 5: Configuración del firewall
-Si estás utilizando un firewall, asegúrate de permitir el tráfico entrante al puerto 5666 (el puerto predeterminado de NRPE).
+## Step 5: Firewall Configuration
+If you are using a firewall, make sure to allow incoming traffic to port 5666 (the default NRPE port).
 ````
 sudo ufw allow 5666
 ````
 
-## Paso 6: Prueba de conexión
-Desde tu servidor Nagios, prueba la conexión a NRPE usando el comando check_nrpe con algún chequeo de prueba. Por ejemplo:
+## Step 6: Connection Testing
+From your Nagios server, test the connection to NRPE using the check_nrpe command with some test check. For example:
 ```
 /usr/local/nagios/libexec/check_nrpe -H <IP_del_servidor_NRPE> -c <nombre_del_comando>
 ```
-Sustituye <IP_del_servidor_NRPE> con la dirección IP de tu servidor NRPE y <nombre_del_comando> con el nombre del comando de chequeo que deseas ejecutar
+Replace <NRPE_server_IP> with the IP address of your NRPE server and <command_name> with the name of the check command you want to execute.
